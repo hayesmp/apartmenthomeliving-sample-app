@@ -11,6 +11,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20131114212102) do
+
+  create_table "floorplans", :force => true do |t|
+    t.string  "headline"
+    t.integer "listing_id"
+  end
+
+  create_table "listings", :force => true do |t|
+    t.string  "listing_id"
+    t.string  "fn"
+    t.string  "url"
+    t.string  "image"
+    t.float   "latitude"
+    t.float   "longitude"
+    t.string  "telephone"
+    t.string  "address"
+    t.string  "city_state_zip"
+    t.string  "pricing"
+    t.boolean "in_house"
+    t.integer "listing_no"
+  end
 
 end
