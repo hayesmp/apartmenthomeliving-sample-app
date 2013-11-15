@@ -22,7 +22,7 @@ class Listing < ActiveRecord::Base
     Listing.all.each do |l|
       listing_ids << l.listing_id
     end
-
+    new_count = 0
     apartment_data.each do |ad|
       unless listing_ids.include?(ad['id'])
         listing = Listing.create!(
@@ -42,8 +42,9 @@ class Listing < ActiveRecord::Base
         ad['floorplans'].each do |fp|
           listing.floorplans.create!(:headline => fp)
         end
+        new_count =+ 1
       end
     end
+    new_count
   end
-
 end
