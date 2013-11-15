@@ -10,7 +10,7 @@ class ListingsController < ApplicationController
     if params[:search]
       @listings = Listing.search(params[:search])
     else
-      @listings = Listing.all.take(10)
+      @listings = Listing.order("updated_at DESC").take(10)
     end
     @hash = populate_map @listings
     respond_with @listings
