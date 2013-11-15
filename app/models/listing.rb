@@ -42,7 +42,7 @@ class Listing < ActiveRecord::Base
         ad['floorplans'].each do |fp|
           listing.floorplans.create!(:headline => fp)
         end
-        new_count =+ 1
+        new_count += 1
       end
     end
     new_count

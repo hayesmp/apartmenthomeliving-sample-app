@@ -17,6 +17,11 @@ describe Listing do
       expect(Listing.all.count).to be > 0
     end
 
+    it "tells me how many records were parsed" do
+      count = Listing.parse_listing_feed(feed)
+      expect(Listing.all.count).to eq count
+    end
+
     it "creates valid Listing data" do
       Listing.parse_listing_feed(feed)
       listing = Listing.all.last
