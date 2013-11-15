@@ -11,7 +11,7 @@ class CreateListing < ActiveRecord::Migration
       t.string  :address
       t.string  :city_state_zip
       t.string  :pricing
-      t.boolean :in_house
+      t.boolean :is_house
       t.integer :listing_no
     end
 
@@ -22,7 +22,7 @@ class CreateListing < ActiveRecord::Migration
   end
 
   def down
-    destroy_table :listings
-    destroy_table :floorplans
+    drop_table :listings
+    drop_table :floorplans
   end
 end
