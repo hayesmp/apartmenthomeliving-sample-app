@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(:version => 20131114212102) do
     t.string  "address"
     t.string  "city_state_zip"
     t.string  "pricing"
-    t.boolean "in_house"
+    t.boolean "is_house"
     t.integer "listing_no"
   end
 
