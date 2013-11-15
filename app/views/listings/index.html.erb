@@ -1,0 +1,27 @@
+<div class="span10">
+  <h3>1-Bedroom Apartments</h3>
+</div>
+<div class="span6">
+  <% @listings.each do |listing| %>
+    <div class="well">
+      <div class="row">
+        <div class="span2">
+          <%= link_to image_tag(listing.image, :class => "index-image"), listing %>
+        </div>
+        <div class="span3">
+          <b><%= link_to listing.pricing, listing %></b>
+          <h4><%= listing.fn %></h4>
+          <p>
+            <%= listing.address %><br>
+            <%= listing.city_state_zip %><br>
+            <%= listing.telephone %>
+          </p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  <%= render :partial => 'other_listings' %>
+</div>
+<div class="span5 well">
+  <%= render :partial => 'map' %>
+</div>
