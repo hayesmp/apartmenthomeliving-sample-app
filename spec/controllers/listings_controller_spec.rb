@@ -45,4 +45,21 @@ describe ListingsController do
       expect(assigns(:listing).pricing).not_to be nil
     end
   end
+
+  describe "the map" do
+    before(:each) do
+      Listing.parse_listing_feed(VCR.use_cassette('1br-apartment-feed') {Listing.listing_json})
+      @listing = Listing.first
+    end
+
+    it "shows more than one marker for index" do
+      get :index
+      expect(assigns(:hash).count).to be > 1
+    end
+
+    it "shows only one marker for the show action" do
+      get :show, id: @listing.id
+      expect(assigns(:hash).count).to be == 1
+    end
+  end
 end

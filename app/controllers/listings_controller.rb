@@ -6,8 +6,11 @@ class ListingsController < ApplicationController
     @other_listings = Listing.order("updated_at DESC").take(6)
   end
 
+
+
   def index
     @listings = Listing.all.take(10)
+    @hash = populate_map @listings
     respond_with @listings
   end
 
@@ -17,6 +20,18 @@ class ListingsController < ApplicationController
 
   def show
     @listing = Listing.find(params[:id])
+    @hash = populate_map [@listing]
     respond_with @listing
+  end
+
+  private
+
+  def populate_map(listings)
+    @hash = Gmaps4rails.build_markers(listings) do |listing, marker|
+      marker.lat listing.latitude
+      marker.lng listing.longitude
+      marker.infowindow "<a href=\"#{listing_path(listing)}\">#{listing.fn}</a>"
+    end
+    @hash
   end
 end
