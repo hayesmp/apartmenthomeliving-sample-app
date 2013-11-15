@@ -1,0 +1,238 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://austin.apartmenthomeliving.com/apartments-for-rent/1-bedroom.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      accept:
+      - '*/*'
+      user-agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 15 Nov 2013 05:06:13 GMT
+      server:
+      - Apache/2.2.3 (Red Hat)
+      x-powered-by:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.9
+      etag:
+      - '"c9d637520f488349af5c2f041549f799"'
+      x-runtime:
+      - '1222'
+      cache-control:
+      - private, max-age=0, must-revalidate
+      content-length:
+      - '13982'
+      status:
+      - '200'
+      content-type:
+      - application/json; charset=utf-8
+      x-route:
+      - awahl8, awahl7
+      set-cookie:
+      - ahl_profile=64e7da1de14db9d8cc3bb3aaed37747f28e637b4; domain=.apartmenthomeliving.com;
+        path=/; expires=Sat, 15-Nov-2014 05:06:14 GMT
+      - _ahl_base_session=BAh7CDoPc2Vzc2lvbl9pZCIlNTk1MjA0MDUzNDI0MWZjMDdmNWQ1NTIyYTY5MzQ5NmM6DWxhc3RfYWxnaQY6FHNlYXJjaF9zZXR0aW5ncyJpeyJleHBhbmRlZCI6ImZhbHNlIiwiYXMiOiJsaXN0Iiwic2hvdyI6Imxpc3QiLCJwbSI6IjEiLCJiZWRzIjoiMSIsInNvcnQiOiJwcmljZS11cCIsInBlcl9wYWdlIjoiMjAifQ%3D%3D--dceacf239698ff94f71f7369c648fe3482e83bff;
+        path=/; HttpOnly
+      connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: "[\r\n\r\n{\r\n    \"id\": \"305177\",\r\n    \"fn\": \"Northgate Hills
+        Apartments\",\r\n    \"url\": \"http://www.apartmenthomeliving.com/apartment-finder/Northgate-Hills-Austin-TX-78758-305177\",\r\n
+        \   \"image\": \"http://propimages.apartments.com/100/13297/6648857_32.jpg\",\r\n
+        \   \"listing\": 0,\r\n    \"latitude\": 30.3693,\r\n    \"longitude\": -97.7174,\r\n
+        \   \"tel\": \"(512) 582-5160\",\r\n    \"address\": \"9024 Northgate Boulevard\",\r\n
+        \   \"pricing\": \"1 bedroom apartment from $562 to $629\",\r\n\r\n    \"floorplans\":
+        [\r\n\r\n        \"1 Bedroom Apartments from <b>$562-$629</b>\"\r\n\r\n        ,\"2
+        Bedroom Apartments from <b>$770-$1019</b>\"\r\n\r\n    ],\r\n\r\n    \"ishouse\":
+        false,\r\n    \"city_st_zip\": \"Austin, TX 78758\"\r\n}\r\n,\r\n\r\n{\r\n
+        \   \"id\": \"305182\",\r\n    \"fn\": \"City Point Apartments\",\r\n    \"url\":
+        \"http://www.apartmenthomeliving.com/apartment-finder/City-Point-Austin-TX-78723-305182\",\r\n
+        \   \"image\": \"http://propimages.apartments.com/100/15283/7641767_32.jpg\",\r\n
+        \   \"listing\": 0,\r\n    \"latitude\": 30.3189,\r\n    \"longitude\": -97.7032,\r\n
+        \   \"tel\": \"(512) 831-5120\",\r\n    \"address\": \"1071 Clayton Lane\",\r\n
+        \   \"pricing\": \"1 bedroom apartment from $599 to $714\",\r\n\r\n    \"floorplans\":
+        [\r\n\r\n        \"1 Bedroom Apartments from <b>$599-$714</b>\"\r\n\r\n        ,\"2
+        Bedroom Apartments from <b>$829-$874</b>\"\r\n\r\n    ],\r\n\r\n    \"ishouse\":
+        false,\r\n    \"city_st_zip\": \"Austin, TX 78723\"\r\n}\r\n,\r\n\r\n{\r\n
+        \   \"id\": \"305181\",\r\n    \"fn\": \"Polo Club Apartments\",\r\n    \"url\":
+        \"http://www.apartmenthomeliving.com/apartment-finder/Polo-Club-Austin-TX-78729-305181\",\r\n
+        \   \"image\": \"http://propimages.apartments.com/100/15115/7557943_32.jpg\",\r\n
+        \   \"listing\": 0,\r\n    \"latitude\": 30.4446,\r\n    \"longitude\": -97.7745,\r\n
+        \   \"tel\": \"(512) 831-5117\",\r\n    \"address\": \"8519 Cahill Drive\",\r\n
+        \   \"pricing\": \"1 bedroom apartment from $629 to $761\",\r\n\r\n    \"floorplans\":
+        [\r\n\r\n        \"1 Bedroom Apartments from <b>$629-$761</b>\"\r\n\r\n        ,\"2
+        Bedroom Apartments from <b>$888-$1144</b>\"\r\n\r\n    ],\r\n\r\n    \"ishouse\":
+        false,\r\n    \"city_st_zip\": \"Austin, TX 78729\"\r\n}\r\n,\r\n\r\n{\r\n
+        \   \"id\": \"305175\",\r\n    \"fn\": \"Arbors of Austin Apartments\",\r\n
+        \   \"url\": \"http://www.apartmenthomeliving.com/apartment-finder/Arbors-of-Austin-Austin-TX-78758-305175\",\r\n
+        \   \"image\": \"http://propimages.apartments.com/100/12826/6413193_32.jpg\",\r\n
+        \   \"listing\": 0,\r\n    \"latitude\": 30.3689,\r\n    \"longitude\": -97.6996,\r\n
+        \   \"tel\": \"(512) 339-6033\",\r\n    \"address\": \"1070 Mearns Meadow
+        Boulevard\",\r\n    \"pricing\": \"1 bedroom apartment from $657 to $695\",\r\n\r\n
+        \   \"floorplans\": [\r\n\r\n        \"1 Bedroom Apartments from <b>$657-$695</b>\"\r\n\r\n
+        \       ,\"2 Bedroom Apartments from <b>$786-$881</b>\"\r\n\r\n    ],\r\n\r\n
+        \   \"ishouse\": false,\r\n    \"city_st_zip\": \"Austin, TX 78758\"\r\n}\r\n,\r\n\r\n{\r\n
+        \   \"id\": \"256279\",\r\n    \"fn\": \"Chesapeake Apartments\",\r\n    \"url\":
+        \"http://www.apartmenthomeliving.com/apartment-finder/Chesapeake-Austin-TX-78750-256279\",\r\n
+        \   \"image\": \"http://propimages.apartments.com/1320/660365_32.jpg\",\r\n
+        \   \"listing\": 0,\r\n    \"latitude\": 30.455,\r\n    \"longitude\": -97.7969,\r\n
+        \   \"tel\": \"(512) 623-7065\",\r\n    \"address\": \"12300 Hymeadow\",\r\n
+        \   \"pricing\": \"1 bedroom apartment for $659\",\r\n\r\n    \"floorplans\":
+        [\r\n\r\n        \"1 Bedroom Apartments from <b>$659</b>\"\r\n\r\n        ,\"2
+        Bedroom Apartments from <b>$750-$834</b>\"\r\n\r\n    ],\r\n\r\n    \"ishouse\":
+        false,\r\n    \"city_st_zip\": \"Austin, TX 78750\"\r\n}\r\n,\r\n\r\n{\r\n
+        \   \"id\": \"247280\",\r\n    \"fn\": \"Broadmoor Apartments\",\r\n    \"url\":
+        \"http://www.apartmenthomeliving.com/apartment-finder/Broadmoor-Austin-TX-78758-247280\",\r\n
+        \   \"image\": \"http://propimages.apartments.com/1316/658132_32.jpg\",\r\n
+        \   \"listing\": 0,\r\n    \"latitude\": 30.4031,\r\n    \"longitude\": -97.7003,\r\n
+        \   \"tel\": \"(512) 961-4416\",\r\n    \"address\": \"12001 Metric Boulevard\",\r\n
+        \   \"pricing\": \"1 bedroom apartment from $689 to $749\",\r\n\r\n    \"floorplans\":
+        [\r\n\r\n        \"1 Bedroom Apartments from <b>$689-$749</b>\"\r\n\r\n        ,\"2
+        Bedroom Apartments from <b>$919-$1039</b>\"\r\n\r\n    ],\r\n\r\n    \"ishouse\":
+        false,\r\n    \"city_st_zip\": \"Austin, TX 78758\"\r\n}\r\n,\r\n\r\n{\r\n
+        \   \"id\": \"197910\",\r\n    \"fn\": \"Harris Branch Apartments\",\r\n    \"url\":
+        \"http://www.apartmenthomeliving.com/apartment-finder/Harris-Branch-Apartments-Austin-TX-78754-197910\",\r\n
+        \   \"image\": \"http://propimages.apartments.com/102025/114/BL010132.JPG\",\r\n
+        \   \"listing\": 0,\r\n    \"latitude\": 30.389,\r\n    \"longitude\": -97.6473,\r\n
+        \   \"tel\": \"(512) 371-6498\",\r\n    \"address\": \"12435 Dessau Rd.\",\r\n
+        \   \"pricing\": \"1 bedroom apartment for $699\",\r\n\r\n    \"floorplans\":
+        [\r\n\r\n        \"1 Bedroom Apartments from <b>$699</b>\"\r\n\r\n        ,\"2
+        Bedroom Apartments from <b>$709</b>\"\r\n\r\n        ,\"3 Bedroom Apartments
+        from <b>$809</b>\"\r\n\r\n    ],\r\n\r\n    \"ishouse\": false,\r\n    \"city_st_zip\":
+        \"Austin, TX 78754\"\r\n}\r\n,\r\n\r\n{\r\n    \"id\": \"198246\",\r\n    \"fn\":
+        \"Arbors of Wells Branch Apartments\",\r\n    \"url\": \"http://www.apartmenthomeliving.com/apartment-finder/Arbors-of-Wells-Branch-Austin-TX-78728-198246\",\r\n
+        \   \"image\": \"http://propimages.apartments.com/3611/1805982_32.jpg\",\r\n
+        \   \"listing\": 0,\r\n    \"latitude\": 30.4352,\r\n    \"longitude\": -97.6761,\r\n
+        \   \"tel\": \"(512) 670-8609\",\r\n    \"address\": \"1831 Wells Branch Pkwy\",\r\n
+        \   \"pricing\": \"1 bedroom apartment from $704 to $861\",\r\n\r\n    \"floorplans\":
+        [\r\n\r\n        \"1 Bedroom Apartments from <b>$704-$861</b>\"\r\n\r\n        ,\"2
+        Bedroom Apartments from <b>$744-$1016</b>\"\r\n\r\n    ],\r\n\r\n    \"ishouse\":
+        false,\r\n    \"city_st_zip\": \"Austin, TX 78728\"\r\n}\r\n,\r\n\r\n{\r\n
+        \   \"id\": \"198248\",\r\n    \"fn\": \"The Lakes at Renaissance Park Apartments\",\r\n
+        \   \"url\": \"http://www.apartmenthomeliving.com/apartment-finder/The-Lakes-at-Renaissance-Park-Austin-TX-78728-198248\",\r\n
+        \   \"image\": \"http://propimages.apartments.com/102447/112/BL010132.JPG\",\r\n
+        \   \"listing\": 0,\r\n    \"latitude\": 30.4363,\r\n    \"longitude\": -97.6854,\r\n
+        \   \"tel\": \"(512) 670-8612\",\r\n    \"address\": \"14000 Renaissance Court\",\r\n
+        \   \"pricing\": \"1 bedroom apartment from $711 to $825\",\r\n\r\n    \"floorplans\":
+        [\r\n\r\n        \"1 Bedroom Apartments from <b>$711-$825</b>\"\r\n\r\n        ,\"2
+        Bedroom Apartments from <b>$902-$1040</b>\"\r\n\r\n        ,\"3 Bedroom Apartments
+        from <b>$1158-$1218</b>\"\r\n\r\n    ],\r\n\r\n    \"ishouse\": false,\r\n
+        \   \"city_st_zip\": \"Austin, TX 78728\"\r\n}\r\n,\r\n\r\n{\r\n    \"id\":
+        \"305179\",\r\n    \"fn\": \"Hillside Creek Apartments\",\r\n    \"url\":
+        \"http://www.apartmenthomeliving.com/apartment-finder/Hillside-Creek-Austin-TX-78741-305179\",\r\n
+        \   \"image\": \"http://propimages.apartments.com/100/13297/6648560_32.jpg\",\r\n
+        \   \"listing\": 0,\r\n    \"latitude\": 30.2327,\r\n    \"longitude\": -97.7376,\r\n
+        \   \"tel\": \"(512) 831-5108\",\r\n    \"address\": \"1730 E Oltorf Street\",\r\n
+        \   \"pricing\": \"1 bedroom apartment from $723 to $905\",\r\n\r\n    \"floorplans\":
+        [\r\n\r\n        \"1 Bedroom Apartments from <b>$723-$905</b>\"\r\n\r\n        ,\"2
+        Bedroom Apartments from <b>$937-$1147</b>\"\r\n\r\n    ],\r\n\r\n    \"ishouse\":
+        false,\r\n    \"city_st_zip\": \"Austin, TX 78741\"\r\n}\r\n,\r\n\r\n{\r\n
+        \   \"id\": \"256280\",\r\n    \"fn\": \"Promontory Point Apartments\",\r\n
+        \   \"url\": \"http://www.apartmenthomeliving.com/apartment-finder/Promontory-Point-Austin-TX-78754-256280\",\r\n
+        \   \"image\": \"http://propimages.apartments.com/1317/658708_32.jpg\",\r\n
+        \   \"listing\": 0,\r\n    \"latitude\": 30.3297,\r\n    \"longitude\": -97.6765,\r\n
+        \   \"tel\": \"(512) 879-3188\",\r\n    \"address\": \"2250 Ridgepoint\",\r\n
+        \   \"pricing\": \"1 bedroom apartment from $725 to $750\",\r\n\r\n    \"floorplans\":
+        [\r\n\r\n        \"Studio Apartments from <b>$645-$660</b>\"\r\n\r\n        ,\"1
+        Bedroom Apartments from <b>$725-$750</b>\"\r\n\r\n        ,\"2 Bedroom Apartments
+        from <b>$899-$925</b>\"\r\n\r\n    ],\r\n\r\n    \"ishouse\": false,\r\n    \"city_st_zip\":
+        \"Austin, TX 78754\"\r\n}\r\n,\r\n\r\n{\r\n    \"id\": \"198241\",\r\n    \"fn\":
+        \"Settler'S Ridge Apartments\",\r\n    \"url\": \"http://www.apartmenthomeliving.com/apartment-finder/SettlerS-Ridge-Austin-TX-78753-198241\",\r\n
+        \   \"image\": \"http://propimages.apartments.com/1679/839525_32.jpg\",\r\n
+        \   \"listing\": 0,\r\n    \"latitude\": 30.4,\r\n    \"longitude\": -97.653,\r\n
+        \   \"tel\": \"(866) 785-1006\",\r\n    \"address\": \"12800 Harrisglenn  Drive\",\r\n
+        \   \"pricing\": \"1 bedroom apartment from $745 to $915\",\r\n\r\n    \"floorplans\":
+        [\r\n\r\n        \"1 Bedroom Apartments from <b>$745-$915</b>\"\r\n\r\n        ,\"2
+        Bedroom Apartments from <b>$935-$1070</b>\"\r\n\r\n        ,\"3 Bedroom Apartments
+        from <b>$1245</b>\"\r\n\r\n    ],\r\n\r\n    \"ishouse\": false,\r\n    \"city_st_zip\":
+        \"Austin, TX 78753\"\r\n}\r\n,\r\n\r\n{\r\n    \"id\": \"729833\",\r\n    \"fn\":
+        \"PARK AT LAKELINE Apartments\",\r\n    \"url\": \"http://www.apartmenthomeliving.com/apartment-finder/PARK-AT-LAKELINE-Austin-TX-78613-729833\",\r\n
+        \   \"image\": \"http://propimages.apartments.com/100/14051/7025734_32.jpg\",\r\n
+        \   \"listing\": 0,\r\n    \"latitude\": 30.4776,\r\n    \"longitude\": -97.8064,\r\n
+        \   \"tel\": \"(512) 236-5507\",\r\n    \"address\": \"2800 S. Lakeline Blvd.\",\r\n
+        \   \"pricing\": \"1 bedroom apartment from $755 to $942\",\r\n\r\n    \"floorplans\":
+        [\r\n\r\n        \"Studio Apartments from <b>$599-$650</b>\"\r\n\r\n        ,\"1
+        Bedroom Apartments from <b>$755-$942</b>\"\r\n\r\n        ,\"2 Bedroom Apartments
+        from <b>$1035-$1242</b>\"\r\n\r\n        ,\"3 Bedroom Apartments from <b>$1499</b>\"\r\n\r\n
+        \   ],\r\n\r\n    \"ishouse\": false,\r\n    \"city_st_zip\": \"Austin, TX
+        78613\"\r\n}\r\n,\r\n\r\n{\r\n    \"id\": \"205850\",\r\n    \"fn\": \"Sycamore
+        Springs Apartments\",\r\n    \"url\": \"http://www.apartmenthomeliving.com/apartment-finder/Sycamore-Springs-Apartments-Austin-TX-78717-205850\",\r\n
+        \   \"image\": \"http://propimages.apartments.com/1735/867612_32.jpg\",\r\n
+        \   \"listing\": 0,\r\n    \"latitude\": 30.4854,\r\n    \"longitude\": -97.772,\r\n
+        \   \"tel\": \"(512) 539-0957\",\r\n    \"address\": \"9801 W. Parmer Ln.\",\r\n
+        \   \"pricing\": \"1 bedroom apartment from $770 to $900\",\r\n\r\n    \"floorplans\":
+        [\r\n\r\n        \"1 Bedroom Apartments from <b>$770-$900</b>\"\r\n\r\n        ,\"2
+        Bedroom Apartments from <b>$1000-$1070</b>\"\r\n\r\n        ,\"3 Bedroom Apartments
+        from <b>$1310</b>\"\r\n\r\n    ],\r\n\r\n    \"ishouse\": false,\r\n    \"city_st_zip\":
+        \"Austin, TX 78717\"\r\n}\r\n,\r\n\r\n{\r\n    \"id\": \"466179\",\r\n    \"fn\":
+        \"Alara Canyon Creek Apartments\",\r\n    \"url\": \"http://www.apartmenthomeliving.com/apartment-finder/Alara-Canyon-Creek-Austin-TX-78726-466179\",\r\n
+        \   \"image\": \"http://propimages.apartments.com/100/11515/5757844_32.jpg\",\r\n
+        \   \"listing\": 0,\r\n    \"latitude\": 30.4286,\r\n    \"longitude\": -97.8423,\r\n
+        \   \"tel\": \"(512) 524-9697\",\r\n    \"address\": \"8225 FM 620 N.\",\r\n
+        \   \"pricing\": \"1 bedroom apartment from $779 to $836\",\r\n\r\n    \"floorplans\":
+        [\r\n\r\n        \"Studio Apartments from <b>$700-$730</b>\"\r\n\r\n        ,\"1
+        Bedroom Apartments from <b>$779-$836</b>\"\r\n\r\n        ,\"2 Bedroom Apartments
+        from <b>$762-$1075</b>\"\r\n\r\n        ,\"3 Bedroom Apartments from <b>$993-$1176</b>\"\r\n\r\n
+        \   ],\r\n\r\n    \"ishouse\": false,\r\n    \"city_st_zip\": \"Austin, TX
+        78726\"\r\n}\r\n,\r\n\r\n{\r\n    \"id\": \"305180\",\r\n    \"fn\": \"Hillside
+        Villas Apartments\",\r\n    \"url\": \"http://www.apartmenthomeliving.com/apartment-finder/Hillside-Villas-Austin-TX-78741-305180\",\r\n
+        \   \"image\": \"http://propimages.apartments.com/100/15284/7642251_32.jpg\",\r\n
+        \   \"listing\": 0,\r\n    \"latitude\": 30.2296,\r\n    \"longitude\": -97.7213,\r\n
+        \   \"tel\": \"(512) 831-5111\",\r\n    \"address\": \"2207 Wickersham Lane\",\r\n
+        \   \"pricing\": \"1 bedroom apartment from $779 to $875\",\r\n\r\n    \"floorplans\":
+        [\r\n\r\n        \"1 Bedroom Apartments from <b>$779-$875</b>\"\r\n\r\n        ,\"2
+        Bedroom Apartments from <b>$952-$1138</b>\"\r\n\r\n    ],\r\n\r\n    \"ishouse\":
+        false,\r\n    \"city_st_zip\": \"Austin, TX 78741\"\r\n}\r\n,\r\n\r\n{\r\n
+        \   \"id\": \"247279\",\r\n    \"fn\": \"Falls on Bull Creek Apartments\",\r\n
+        \   \"url\": \"http://www.apartmenthomeliving.com/apartment-finder/Falls-on-Bull-Creek-Austin-TX-78759-247279\",\r\n
+        \   \"image\": \"http://propimages.apartments.com/1359/679998_32.jpg\",\r\n
+        \   \"listing\": 0,\r\n    \"latitude\": 30.385,\r\n    \"longitude\": -97.7667,\r\n
+        \   \"tel\": \"(512) 961-4406\",\r\n    \"address\": \"8527 Capital of Texas
+        Highway\",\r\n    \"pricing\": \"1 bedroom apartment from $784 to $825\",\r\n\r\n
+        \   \"floorplans\": [\r\n\r\n        \"Studio Apartments from <b>$725</b>\"\r\n\r\n
+        \       ,\"1 Bedroom Apartments from <b>$784-$825</b>\"\r\n\r\n        ,\"2
+        Bedroom Apartments from <b>$904-$1225</b>\"\r\n\r\n    ],\r\n\r\n    \"ishouse\":
+        false,\r\n    \"city_st_zip\": \"Austin, TX 78759\"\r\n}\r\n,\r\n\r\n{\r\n
+        \   \"id\": \"359455\",\r\n    \"fn\": \"Monterone Canyon Creek Apartments\",\r\n
+        \   \"url\": \"http://www.apartmenthomeliving.com/apartment-finder/Monterone-Canyon-Creek-Austin-TX-78726-359455\",\r\n
+        \   \"image\": \"http://propimages.apartments.com/3222/1611435_32.jpg\",\r\n
+        \   \"listing\": 0,\r\n    \"latitude\": 30.4265,\r\n    \"longitude\": -97.8433,\r\n
+        \   \"tel\": \"(866) 922-6186\",\r\n    \"address\": \"9009 Farm to Market
+        620 N\",\r\n    \"pricing\": \"1 bedroom apartment from $787 to $991\",\r\n\r\n
+        \   \"floorplans\": [\r\n\r\n        \"1 Bedroom Apartments from <b>$787-$991</b>\"\r\n\r\n
+        \       ,\"2 Bedroom Apartments from <b>$1141-$1474</b>\"\r\n\r\n        ,\"3
+        Bedroom Apartments from <b>$1448-$1479</b>\"\r\n\r\n        ,\"4 Bedroom Apartments
+        from <b>$2084</b>\"\r\n\r\n    ],\r\n\r\n    \"ishouse\": false,\r\n    \"city_st_zip\":
+        \"Austin, TX 78726\"\r\n}\r\n,\r\n\r\n{\r\n    \"id\": \"240352\",\r\n    \"fn\":
+        \"Avendaro at Canyon Creek Apartments\",\r\n    \"url\": \"http://www.apartmenthomeliving.com/apartment-finder/Avendaro-at-Canyon-Creek-Austin-TX-78726-240352\",\r\n
+        \   \"image\": \"http://propimages.apartments.com/100/11537/5768696_32.jpg\",\r\n
+        \   \"listing\": 0,\r\n    \"latitude\": 30.4399,\r\n    \"longitude\": -97.8393,\r\n
+        \   \"tel\": \"(866) 752-1728\",\r\n    \"address\": \"9807 Ranch Road 620
+        N.\",\r\n    \"pricing\": \"1 bedroom apartment from $787 to $831\",\r\n\r\n
+        \   \"floorplans\": [\r\n\r\n        \"1 Bedroom Apartments from <b>$787-$831</b>\"\r\n\r\n
+        \       ,\"2 Bedroom Apartments from <b>$969-$1027</b>\"\r\n\r\n        ,\"3
+        Bedroom Apartments from <b>$1326</b>\"\r\n\r\n    ],\r\n\r\n    \"ishouse\":
+        false,\r\n    \"city_st_zip\": \"Austin, TX 78726\"\r\n}\r\n,\r\n\r\n{\r\n
+        \   \"id\": \"723859\",\r\n    \"fn\": \"The 704 Apartments\",\r\n    \"url\":
+        \"http://www.apartmenthomeliving.com/apartment-finder/The-704-Austin-TX-78704-723859\",\r\n
+        \   \"image\": \"http://propimages.apartments.com/100/13258/6629449_32.jpg\",\r\n
+        \   \"listing\": 0,\r\n    \"latitude\": 30.2406,\r\n    \"longitude\": -97.7859,\r\n
+        \   \"tel\": \"(512) 831-5194\",\r\n    \"address\": \"3401 S. Lamar Blvd\",\r\n
+        \   \"pricing\": \"1 bedroom apartment from $798 to $1635\",\r\n\r\n    \"floorplans\":
+        [\r\n\r\n        \"1 Bedroom Apartments from <b>$798-$1635</b>\"\r\n\r\n        ,\"2
+        Bedroom Apartments from <b>$1865-$2395</b>\"\r\n\r\n    ],\r\n\r\n    \"ishouse\":
+        false,\r\n    \"city_st_zip\": \"Austin, TX 78704\"\r\n}\r\n\r\n\r\n]"
+    http_version: '1.1'
+  recorded_at: Fri, 15 Nov 2013 05:06:14 GMT
+recorded_with: VCR 2.5.0
