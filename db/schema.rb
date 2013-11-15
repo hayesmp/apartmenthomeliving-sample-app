@@ -14,23 +14,27 @@
 ActiveRecord::Schema.define(:version => 20131114212102) do
 
   create_table "floorplans", :force => true do |t|
-    t.string  "headline"
-    t.integer "listing_id"
+    t.string   "headline"
+    t.integer  "listing_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "listings", :force => true do |t|
-    t.string  "listing_id"
-    t.string  "fn"
-    t.string  "url"
-    t.string  "image"
-    t.float   "latitude"
-    t.float   "longitude"
-    t.string  "telephone"
-    t.string  "address"
-    t.string  "city_state_zip"
-    t.string  "pricing"
-    t.boolean "is_house"
-    t.integer "listing_no"
+    t.string   "listing_id"
+    t.string   "fn"
+    t.string   "url"
+    t.string   "image"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "telephone"
+    t.string   "address"
+    t.string   "city_state_zip"
+    t.string   "pricing"
+    t.boolean  "is_house"
+    t.integer  "listing_no"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
 end

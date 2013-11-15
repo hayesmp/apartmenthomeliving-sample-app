@@ -13,11 +13,13 @@ class CreateListing < ActiveRecord::Migration
       t.string  :pricing
       t.boolean :is_house
       t.integer :listing_no
+      t.timestamps
     end
 
     create_table :floorplans do |t|
       t.string  :headline
       t.integer :listing_id
+      t.timestamps
     end
   end
 
