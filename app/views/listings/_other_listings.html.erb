@@ -1,0 +1,18 @@
+<p><b>Other Recently Listed 1-Bedroom:</b></p>
+<% i = 0 %>
+<table>
+  <% 2.times do %>
+    <tr>
+      <% 3.times do %>
+        <td>
+          <p class="other-listing">
+            <%= link_to image_tag(@other_listings[i].image, :class => "other-listings-image"), @other_listings[i].url %><br>
+            <b><%= link_to @other_listings[i].pricing, @other_listings[i] %></b>
+          </p>
+        </td>
+        <% i += 1 %>
+      <% end %>
+    </tr>
+
+  <% end %>
+</table>
