@@ -6,16 +6,14 @@ class ListingsController < ApplicationController
     @other_listings = Listing.order("updated_at DESC").take(6)
   end
 
-
-
   def index
-    @listings = Listing.all.take(10)
+    if params[:search]
+      @listings = Listing.search(params[:search])
+    else
+      @listings = Listing.all.take(10)
+    end
     @hash = populate_map @listings
     respond_with @listings
-  end
-
-  def search
-
   end
 
   def show

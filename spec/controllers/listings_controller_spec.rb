@@ -5,6 +5,7 @@ describe ListingsController do
     before(:each) do
       Listing.parse_listing_feed(VCR.use_cassette('1br-apartment-feed') {Listing.listing_json})
     end
+
     it "responds successfully with an HTTP 200 status code" do
       get :index
       expect(response).to be_success
@@ -43,6 +44,18 @@ describe ListingsController do
       get :show, id: @listing.id
 
       expect(assigns(:listing).pricing).not_to be nil
+    end
+  end
+
+  describe "search" do
+    before(:each) do
+      Listing.parse_listing_feed(VCR.use_cassette('1br-apartment-feed') {Listing.listing_json})
+    end
+    
+    it "loads results for a search term" do
+      get :index, search: "bedroom"
+
+      expect(assigns(:listings).count).to be > 1
     end
   end
 

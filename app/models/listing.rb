@@ -47,4 +47,12 @@ class Listing < ActiveRecord::Base
     end
     new_count
   end
+
+  def self.search(search)
+    if search
+      find(:all, :joins => :floorplans, :conditions => ['(fn like ? or address like ? or city_state_zip like ? or pricing like ? or floorplans.headline like ?)', "%#{search}%", "%#{search}%", "%#{search}%", "%#{search}%", "%#{search}%"])
+    else
+      find(:all)
+    end
+  end
 end
