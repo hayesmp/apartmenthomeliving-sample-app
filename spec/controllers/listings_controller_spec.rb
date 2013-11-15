@@ -51,7 +51,7 @@ describe ListingsController do
     before(:each) do
       Listing.parse_listing_feed(VCR.use_cassette('1br-apartment-feed') {Listing.listing_json})
     end
-    
+
     it "loads results for a search term" do
       get :index, search: "bedroom"
 
